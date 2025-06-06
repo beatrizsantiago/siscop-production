@@ -11,12 +11,11 @@
 - [React](https://react.dev/) — biblioteca principal para construção da interface;
 - [Vite](https://vite.dev/) — ferramenta de build e bundler ultrarrápido;
 - [@mui/material](https://mui.com/material-ui/) — biblioteca de componentes para construção de formulários e telas;
-- [@phosphor-icons/react](https://phosphoricons.com/) — conjunto de ícones utilizados na interface;
 - [agro-core](https://www.npmjs.com/package/agro-core) — design system para padronização de cores e estilos;
 - [Firebase](https://firebase.google.com) — backend como serviço (BaaS) para autenticação, banco de dados e hospedagem;
 - [react-toastify](https://fkhadra.github.io/react-toastify/introduction/) — sistema de notificações e alertas;
 - [@module-federation/vite](https://github.com/module-federation/vite) — integração de Module Federation para arquitetura de microfrontends.
-- [date-fns](https://date-fns.org/) — para lidar com datas;
+- [chart.js](https://www.chartjs.org/) - para os gráficos;
 - [Jest](https://jestjs.io/) — framework de testes para JavaScript, utilizado para os testes unitários e de integração;
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) — utilizada para testes de componentes React com foco na experiência do usuário.
 
