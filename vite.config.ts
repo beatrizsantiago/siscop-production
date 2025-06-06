@@ -25,7 +25,6 @@ export default defineConfig({
       '@App': path.resolve(__dirname, 'src/App'),
       '@fb': path.resolve(__dirname, 'src/firebase'),
       '@generalTypes': path.resolve(__dirname, 'src/types'),
-      '@utils': path.resolve(__dirname, 'src/utils'),
     },
   },
 })

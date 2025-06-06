@@ -31,7 +31,6 @@
       "@App/*": ["./src/App/*"],
       "@fb/*": ["./src/firebase/*"],
       "@generalTypes/*": ["./src/types/*"],
-      "@utils/*": ["./src/utils/*"],
     }
   },
   "include": ["src"]
