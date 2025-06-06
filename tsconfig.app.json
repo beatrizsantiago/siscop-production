@@ -26,6 +26,12 @@
       "agro-core": [
         "./node_modules/agro-core/dist/index.d.ts"
       ],
+      "@domain/*": ["./src/domain/*"],
+      "@usecases/*": ["./src/usecases/*"],
+      "@App/*": ["./src/App/*"],
+      "@fb/*": ["./src/firebase/*"],
+      "@generalTypes/*": ["./src/types/*"],
+      "@utils/*": ["./src/utils/*"],
     }
   },
   "include": ["src"]

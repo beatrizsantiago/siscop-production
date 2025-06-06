@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import { federation } from '@module-federation/vite';
 import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
   plugins: [
@@ -16,5 +17,15 @@ export default defineConfig({
   ],
   server: {
     port: 3005,
+  },
+  resolve: {
+    alias: {
+      '@domain': path.resolve(__dirname, 'src/domain'),
+      '@usecases': path.resolve(__dirname, 'src/usecases'),
+      '@App': path.resolve(__dirname, 'src/App'),
+      '@fb': path.resolve(__dirname, 'src/firebase'),
+      '@generalTypes': path.resolve(__dirname, 'src/types'),
+      '@utils': path.resolve(__dirname, 'src/utils'),
+    },
   },
 })
