@@ -7,7 +7,7 @@ type Props = {
 
 const ChartContainer = ({ label, children }:Props) => (
   <Box
-    width={{ xs: '100%', md: '49.5%' }}
+    width="100%"
     bgcolor="#fff"
     padding={3}
     borderRadius={3}
