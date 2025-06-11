@@ -11,7 +11,7 @@ const Main = () => {
       <ChartContainer label="Plantados">
         <ProductByStateChat state="IN_PRODUCTION" />
       </ChartContainer>
-      <ChartContainer label="Colhidos">
+      <ChartContainer label="Colhidos (Prontos para venda)">
         <ProductByStateChat state="READY" />
       </ChartContainer>
     </Box>
