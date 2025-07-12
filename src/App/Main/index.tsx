@@ -1,18 +1,18 @@
 import { Box } from '@mui/material';
-import ProductByStateChat from '@App/ProductByStateChat';
+import ProductByStateChart from '@App/ProductByStateChart';
 import ChartContainer from './components/ChartContainer';
 
 const Main = () => {
   return (
     <Box padding={2} display="flex" flexDirection="column" gap={2} maxWidth="100%">
       <ChartContainer label="Aguardando plantio">
-        <ProductByStateChat state="WAITING" />
+        <ProductByStateChart state="WAITING" />
       </ChartContainer>
       <ChartContainer label="Plantados">
-        <ProductByStateChat state="IN_PRODUCTION" />
+        <ProductByStateChart state="IN_PRODUCTION" />
       </ChartContainer>
       <ChartContainer label="Colhidos (Prontos para venda)">
-        <ProductByStateChat state="READY" />
+        <ProductByStateChart state="READY" />
       </ChartContainer>
     </Box>
   );

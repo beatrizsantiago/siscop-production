@@ -22,7 +22,7 @@ type Props = {
   state: string,
 };
 
-const ProductByStateChat = ({ state }:Props) => {
+const ProductByStateChart = ({ state }:Props) => {
   const theme = useTheme();
   const [chartData, setChartData] = useState<ProducsByStateDataType>([]);
   const [loading, setLoading] = useState(false);
@@ -99,4 +99,4 @@ const ProductByStateChat = ({ state }:Props) => {
   );
 }
 
-export default ProductByStateChat;
+export default ProductByStateChart;
