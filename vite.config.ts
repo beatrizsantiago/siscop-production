@@ -23,6 +23,7 @@ export default defineConfig({
   ],
   server: {
     port: 3005,
+    cors: true
   },
   resolve: {
     alias: {
@@ -32,5 +33,8 @@ export default defineConfig({
       '@fb': path.resolve(__dirname, 'src/firebase'),
       '@generalTypes': path.resolve(__dirname, 'src/types'),
     },
+  },
+  build: {
+    target: 'esnext',
   },
 })
