@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Main from '../../../src/App/Main';
 
-jest.mock('../../../src/App/ProductByStateChat', () => ({
+jest.mock('../../../src/App/ProductByStateChart', () => ({
   __esModule: true,
   default: ({ state }: { state: string }) => <div data-testid={`chart-${state}`}>Chart for {state}</div>,
 }));
@@ -12,7 +12,7 @@ describe('Main (Chart Dashboard)', () => {
 
     expect(screen.getByText('Aguardando plantio')).toBeInTheDocument();
     expect(screen.getByText('Plantados')).toBeInTheDocument();
-    expect(screen.getByText('Colhidos')).toBeInTheDocument();
+    expect(screen.getByText('Colhidos (Prontos para venda)')).toBeInTheDocument();
 
     expect(screen.getByText('Chart for WAITING')).toBeInTheDocument();
     expect(screen.getByText('Chart for IN_PRODUCTION')).toBeInTheDocument();

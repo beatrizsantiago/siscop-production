@@ -1,6 +1,6 @@
 import { render, screen, act } from '@testing-library/react';
 import { ProducsByStateDataType } from '../../src/types/chart';
-import ProductByStateChat from '../../src/App/ProductByStateChat';
+import ProductByStateChart from '../../src/App/ProductByStateChart';
 import GetDataUseCase from '../../src/usecases/getProductsByState';
 
 jest.mock('react-chartjs-2', () => ({
@@ -13,7 +13,7 @@ jest.mock('react-chartjs-2', () => ({
 
 jest.mock('../../src/usecases/getProductsByState');
 
-describe('ProductByStateChat', () => {
+describe('ProductByStateChart', () => {
   const mockData: ProducsByStateDataType = [
     { productName: 'Tomate', amount: 12 },
     { productName: 'Alface', amount: 5 },
@@ -29,7 +29,7 @@ describe('ProductByStateChat', () => {
     }));
 
     await act(async () => {
-      render(<ProductByStateChat state="WAITING" />);
+      render(<ProductByStateChart state="WAITING" />);
     });
 
     expect(screen.getByRole('progressbar')).toBeInTheDocument();
@@ -41,7 +41,7 @@ describe('ProductByStateChat', () => {
     }));
 
     await act(async () => {
-      render(<ProductByStateChat state="IN_PRODUCTION" />);
+      render(<ProductByStateChart state="IN_PRODUCTION" />);
     });
 
     expect(screen.getByText('Nenhum produto encontrado.')).toBeInTheDocument();
@@ -53,7 +53,7 @@ describe('ProductByStateChat', () => {
     }));
 
     await act(async () => {
-      render(<ProductByStateChat state="READY" />);
+      render(<ProductByStateChart state="READY" />);
     });
 
     const chart = screen.getByTestId('bar-chart');
