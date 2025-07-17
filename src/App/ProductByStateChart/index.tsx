@@ -89,6 +89,7 @@ const ProductByStateChart = ({ state }:Props) => {
         ],
       }}
       height={320}
+      width={window.innerWidth - 100}
       options={{
         responsive: false,
         plugins: {
